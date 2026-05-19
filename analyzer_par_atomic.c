@@ -64,7 +64,7 @@ int main(int argc,  char*argv[])
 
     printf("[Atomic] processando com %d threads",omp_get_max_threads());
 
-    #pragma omp paralell for
+    #pragma omp parallel for
     for (long i=0;i<line_count;i++)
     {
         char* s=strchr(linhas[i],'"');
